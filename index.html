@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodwagon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <nav class="header-nav">
+
+      <a class="header-nav-link" href="./index.html">
+        <img class="logo" src="./images/logo.svg" alt="logo burger" width="28" />
+        <span>food</span><span>waGon</span></a>
+      <div class="header-location">
+        <span>Deliver to:</span>
+        <svg class="icon header-location-icon" width="14" height="25">
+          <use href="./images/icons.svg#icon-map-marker"></use>
+        </svg>
+        <p class="header-location-current">Current Location</p>
+        <p class="header-location-text">Mohammadpur Bus Stand, Dhaka</p>
+      </div>
+
+      <div class="header-group">
+        <div class="header-input-wrapper">
+          <svg class="icon header-search-icon" width="18" height="28">
+            <use href="./images/icons.svg#icon-search"></use>
+          </svg>
+          <input class="search-input" type="text" placeholder="Search Food" />
+        </div>
+
+        <button class="header-btn" type="button">
+          <svg class="icon login-icon" width="16" height="18">
+            <use href="./images/icons.svg#icon-user"></use>
+          </svg>
+          Login
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <!-- SECTION 1 HERO -->
+    <section class="hero-section">
+      <div class="hero-section-container">
+        <h1 class="hero-title">Are you starving?</h1>
+        <p class="hero-text">
+          Within a few clicks, find meals that are accessible near you
+        </p>
+        <div class="hero-form-container">
+          <div class="hero-form-container-btn">
+
+            <button class="hero-container-btn" type="button">
+              <svg class="icon login-icon" width="23" height="18">
+                <use href="./images/icons.svg#icon-bike"></use>
+              </svg>
+              Delivery
+            </button>
+            <button class="hero-container-btn" type="button">
+              <svg class="icon login-icon" width="16" height="18">
+                <use href="./images/icons.svg#icon-shoper"></use>
+              </svg>
+              Pickup
+            </button>
+
+          </div>
+          <form class="hero-form">
+            <label for="email">
+              <span class="hero-input-wrapper">
+                <svg class="icon hero-search-icon" width="18" height="34">
+                  <use href="./images/icons.svg#icon-map-marker"></use>
+                </svg>
+                <input class="hero-form-input" type="email" id="email" placeholder="Enter Your Address" />
+              </span>
+            </label>
+
+
+            <button class="hero-form-btn" type="submit">
+              <svg class="icon hero-location-icon" width="14" height="14">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+              Find Food
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 TOP ITEMS -->
+    <section class="container top-items">
+      <div class="top-items-container">
+        <h2 class="top-items-title visually-hidden">Our Portfolio</h2>
+        <ul class="top-items-list">
+          <li class="top-items-item">
+            <div>
+              <img srcset="./images/top-items/dish1.jpg 1x, ./images/top-items/dish1@2x.jpg 2x"
+                src="./images/top-items/dish1.jpg" class="top-item-img" width="357" height="301"
+                alt="Greys Vage discount 15%" />
+              <div class="top-item-discount-group">
+                <p class="top-item-discount">15</p>
+                <div class="top-item-pers-group">
+                  <span class="top-item-pers">%</span>
+                  <span class="top-item-off">Off</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="top-item-text-wrapper">
+              <p class="top-item-name">Greys Vage</p>
+              <p class="top-item-end">6 Days Remaining</p>
+            </div>
+          </li>
+          <li class="top-items-item">
+            <div>
+              <img srcset="./images/top-items/dish2.jpg 1x, ./images/top-items/dish2@2x.jpg 2x"
+                src="./images/top-items/dish2.jpg" class="top-item-img" width="357" height="301"
+                alt="Greys Vage discount 10%" />
+              <div class="top-item-discount-group">
+                <p class="top-item-discount">10</p>
+                <div class="top-item-pers-group">
+                  <span class="top-item-pers">%</span>
+                  <span class="top-item-off">Off</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="top-item-text-wrapper">
+              <p class="top-item-name">Greys Vage</p>
+              <p class="top-item-end">6 Days Remaining</p>
+            </div>
+
+          </li>
+          <li class="top-items-item">
+            <div>
+              <img srcset="./images/top-items/dish3.jpg 1x, ./images/top-items/dish3@2x.jpg 2x"
+                src="./images/top-items/dish3.jpg" class="top-item-img" width="357" height="301"
+                alt="Greys Vage discount 25%" />
+              <div class="top-item-discount-group">
+                <p class="top-item-discount">25</p>
+                <div class="top-item-pers-group">
+                  <span class="top-item-pers">%</span>
+                  <span class="top-item-off">Off</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="top-item-text-wrapper">
+              <p class="top-item-name">Greys Vage</p>
+              <p class="top-item-end">7 Days Remaining</p>
+            </div>
+
+          </li>
+          <li class="top-items-item">
+            <div>
+              <img srcset="./images/top-items/dish4.jpg 1x, ./images/top-items/dish4@2x.jpg 2x"
+                src="./images/top-items/dish4.jpg" class="top-item-img" width="357" height="301"
+                alt="Greys Vage discount 20%" />
+              <div class="top-item-discount-group">
+                <p class="top-item-discount">20</p>
+                <div class="top-item-pers-group">
+                  <span class="top-item-pers">%</span>
+                  <span class="top-item-off">Off</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="top-item-text-wrapper">
+              <p class="top-item-name">Greys Vage</p>
+              <p class="top-item-end">8 Days Remaining</p>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section 3 How does it work -->
+    <section class=" how-it-work">
+      <h2 class="how-title">How does it work</h2>
+      <ul class="how-list">
+        <li class="how-item">
+          <img class="how-item-icon" src="./images/3how/icon1.png" alt="Select location" width="86" height="112">
+          <p class="top-item-text-title">Select location</p>
+          <p class="top-item-text-subtitle">Choose the location where your food will be delivered</p>
+        </li>
+        <li class="how-item">
+          <img class="how-item-icon" src="./images/3how/icon2.png" alt="Select location" width="87" height="112">
+          <p class="top-item-text-title">Choose order</p>
+          <p class="top-item-text-subtitle">Check over hundreds of menus to pick your favorite food</p>
+        </li>
+        <li class="how-item">
+          <img class="how-item-icon" src="./images/3how/icon3.png" alt="Select location" width="72" height="112">
+          <p class="top-item-text-title">Pay advanced</p>
+          <p class="top-item-text-subtitle">It's quick, safe, and simple. Select several methods of payment</p>
+        </li>
+        <li class="how-item">
+          <img class="how-item-icon" src="./images/3how/icon4.png" alt="Select location" width="112" height="112">
+          <p class="top-item-text-title">Enjoy meals</p>
+          <p class="top-item-text-subtitle">Food is made and delivered directly to your home</p>
+        </li>
+      </ul>
+    </section>
+    <!-- section 4 Popular items -->
+    <section class="popular-section">
+      <div class="popular-slider">
+        <button class="popular-slider-btn popular-prev-btn">
+          <svg class="icon popular-icon" width="76">
+            <use href="./images/icons.svg#icon-btn-left"></use>
+          </svg>
+        </button>
+
+        <div class="popular-item-group">
+          <h2 class="popular-items-title">Popular items</h2>
+          <ul class="popular-items-list">
+            <li class="popular-items-item">
+              <div>
+                <img srcset="./images/4popular/item1.jpg 1x, ./images/4popular/item1@2x.jpg 2x"
+                  src="./images/4popular/item1.jpg " class="popular-item-img" width="282" height="283"
+                  alt="Cheese Burger" />
+                <div class="popular-item-group">
+                  <h3 class="popular-item-title">Cheese Burger</h3>
+                  <div class="popular-area-group">
+                    <span class="popular-icon-container">
+                      <svg class="icon header-location-icon" width="14" height="25">
+                        <use href="./images/icons.svg#icon-map-marker"></use>
+                      </svg>
+                    </span>
+                    <p class="popular-item-area">Burger Arena</p>
+                  </div>
+                  <p class="popular-item-price">$3.88</p>
+                </div>
+                <button class="popular-item-btn">Order Now</button>
+              </div>
+            </li>
+            <li class="popular-items-item">
+              <div>
+                <img srcset="./images/4popular/item2.jpg 1x, ./images/4popular/item2@2x.jpg 2x"
+                  src="./images/4popular/item2.jpg " class="popular-item-img" width="282" height="283"
+                  alt="Top Sticks" />
+                <div class="popular-item-group">
+                  <h4 class="popular-item-title">Toffe’s Cake</h4>
+                  <div class="popular-area-group">
+                    <span class="popular-icon-container">
+                      <svg class="icon header-location-icon" width="14" height="25">
+                        <use href="./images/icons.svg#icon-map-marker"></use>
+                      </svg>
+                    </span>
+                    <p class="popular-item-area">Top Sticks</p>
+                  </div>
+                  <p class="popular-item-price">$4.00</p>
+                </div>
+                <button class="popular-item-btn">Order Now</button>
+              </div>
+            </li>
+            <li class="popular-items-item">
+              <div>
+                <img srcset="./images/4popular/item3.jpg 1x, ./images/4popular/item3@2x.jpg 2x"
+                  src="./images/4popular/item3.jpg " class="popular-item-img" width="282" height="283" alt="Dancake" />
+                <div class="popular-item-group">
+                  <h4 class="popular-item-title">Dancake</h4>
+                  <div class="popular-area-group">
+                    <span class="popular-icon-container">
+                      <svg class="icon header-location-icon" width="14" height="25">
+                        <use href="./images/icons.svg#icon-map-marker"></use>
+                      </svg>
+                    </span>
+                    <p class="popular-item-area">Cake World</p>
+                  </div>
+                  <p class="popular-item-price">$1.99</p>
+                </div>
+                <button class="popular-item-btn">Order Now</button>
+              </div>
+            </li>
+            <li class="popular-items-item">
+              <div>
+                <img srcset="./images/4popular/item4.jpg 1x, ./images/4popular/item4@2x.jpg 2x"
+                  src="./images/4popular/item4.jpg " class="popular-item-img" width="282" height="283"
+                  alt="Crispy Sandwitch" />
+                <div class="popular-item-group">
+                  <h4 class="popular-item-title">Crispy Sandwitch</h4>
+                  <div class="popular-area-group">
+                    <span class="popular-icon-container">
+                      <svg class="icon header-location-icon" width="14" height="25">
+                        <use href="./images/icons.svg#icon-map-marker"></use>
+                      </svg>
+                    </span>
+                    <p class="popular-item-area">Fastfood Dine</p>
+                  </div>
+                  <p class="popular-item-price">$3.00</p>
+                </div>
+                <button class="popular-item-btn">Order Now</button>
+              </div>
+            </li>
+            <li class="popular-items-item">
+              <div>
+                <img srcset="./images/4popular/item5.jpg 1x, ./images/4popular/item5@2x.jpg 2x"
+                  src="./images/4popular/item5.jpg " class="popular-item-img" width="282" height="283"
+                  alt="Thai  Soup" />
+                <div class="popular-item-group">
+                  <h4 class="popular-item-title">Thai Soup</h4>
+                  <div class="popular-area-group">
+                    <span class="popular-icon-container">
+                      <svg class="icon header-location-icon" width="14" height="25">
+                        <use href="./images/icons.svg#icon-map-marker"></use>
+                      </svg>
+                    </span>
+                    <p class="popular-item-area">Foody man</p>
+                  </div>
+                  <p class="popular-item-price">$2.79</p>
+                </div>
+                <button class="popular-item-btn">Order Now</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button class="popular-slider-btn popular-next-btn">
+          <svg class="icon popular-icon" width="76">
+            <use href="./images/icons.svg#icon-btn-right"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Featured Restaurants ////////////////////////////////////////////////////////////-->
+    <section class="container featured-container">
+      <div class="featured-slider">
+        <h2 class="featured-title">Featured Restaurants</h2>
+        <ul class="featured-list">
+          <li class="featured-item">
+            <img srcset="./images/5featured/image1.jpg 1x, ./images/5featured/image1@2x.jpg 2x"
+              src="./images/5featured/image1.jpg" class="featured-item-img" width="357" height="301"
+              alt="main course" />
+
+            <div class="featured-badge-group">
+              <div class="featured-badge featured-badge-first">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-bookmark"></use>
+                </svg>
+                <p class="featured-badge-text">20% off</p>
+              </div>
+              <div class="featured-badge featured-badge-second">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-time"></use>
+                </svg>
+                <p class="featured-badge-text">Fast</p>
+              </div>
+            </div>
+
+            <div class="featured-restaurant-container">
+              <img src="./images/5featured/logo1.png" class="featured-restaurant-img" width="64" height="64"
+                alt="Foodworld logo" />
+              <div class="featured-restaurant-info">
+                <h3 class="featured-restaurant-title">Foodworld</h3>
+                <div class="featured-restaurant-stars-container">
+                  <span class="featured-icon-container">
+                    <svg class="icon featured-icon featured-icon-star" width="25" height="23">
+                      <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                  </span>
+                  <span class="featured-restaurant-stars">46</span>
+                </div>
+              </div>
+            </div>
+            <button class="featured-btn featured-btn-tomorrow">Opens tomorrow</button>
+          </li>
+          <li class="featured-item">
+            <img srcset="./images/5featured/image2.jpg 1x, ./images/5featured/image2@2x.jpg 2x"
+              src="./images/5featured/image2.jpg" class="featured-item-img" width="357" height="301"
+              alt="banana dessert" />
+
+            <div class="featured-badge-group">
+              <div class="featured-badge featured-badge-first">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-bookmark"></use>
+                </svg>
+                <p class="featured-badge-text">15% off</p>
+              </div>
+              <div class="featured-badge featured-badge-second">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-time"></use>
+                </svg>
+                <p class="featured-badge-text">Fast</p>
+              </div>
+            </div>
+
+            <div class="featured-restaurant-container">
+              <img src="./images/5featured/logo2.png" class="featured-restaurant-img" width="64" height="64"
+                alt="Pizzahub logo" />
+              <div class="featured-restaurant-info">
+                <h3 class="featured-restaurant-title">Pizzahub</h3>
+                <div class="featured-restaurant-stars-container">
+                  <span class="featured-icon-container">
+                    <svg class="icon featured-icon featured-icon-star" width="25" height="23">
+                      <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                  </span>
+                  <span class="featured-restaurant-stars">40</span>
+                </div>
+              </div>
+            </div>
+            <button class="featured-btn featured-btn-tomorrow">Opens tomorrow</button>
+          </li>
+          <li class="featured-item">
+            <img srcset="./images/5featured/image3.jpg 1x, ./images/5featured/image3@2x.jpg 2x"
+              src="./images/5featured/image3.jpg" class="featured-item-img" width="357" height="301" alt="pancakes" />
+
+            <div class="featured-badge-group">
+              <div class="featured-badge featured-badge-first">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-bookmark"></use>
+                </svg>
+                <p class="featured-badge-text">10% off</p>
+              </div>
+              <div class="featured-badge featured-badge-second">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-time"></use>
+                </svg>
+                <p class="featured-badge-text">Fast</p>
+              </div>
+            </div>
+
+            <div class="featured-restaurant-container">
+              <img src="./images/5featured/logo3.png" class="featured-restaurant-img" width="64" height="64"
+                alt="Donuts hut logo" />
+              <div class="featured-restaurant-info">
+                <h3 class="featured-restaurant-title">Donuts hut</h3>
+                <div class="featured-restaurant-stars-container">
+                  <span class="featured-icon-container">
+                    <svg class="icon featured-icon featured-icon-star" width="25" height="23">
+                      <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                  </span>
+                  <span class="featured-restaurant-stars">20</span>
+                </div>
+              </div>
+            </div>
+            <button class="featured-btn featured-btn-now">Open Now</button>
+          </li>
+          <li class="featured-item">
+            <img srcset="./images/5featured/image4.jpg 1x, ./images/5featured/image4@2x.jpg 2x"
+              src="./images/5featured/image4.jpg" class="featured-item-img" width="357" height="301" alt="pink cake" />
+
+            <div class="featured-badge-group">
+              <div class="featured-badge featured-badge-first">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-bookmark"></use>
+                </svg>
+                <p class="featured-badge-text">15% off</p>
+              </div>
+              <div class="featured-badge featured-badge-second">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-time"></use>
+                </svg>
+                <p class="featured-badge-text">Fast</p>
+              </div>
+            </div>
+
+            <div class="featured-restaurant-container">
+              <img src="./images/5featured/logo4.png" class="featured-restaurant-img" width="64" height="64"
+                alt="SubWay logo" />
+              <div class="featured-restaurant-info">
+                <h3 class="featured-restaurant-title">SubWay</h3>
+                <div class="featured-restaurant-stars-container">
+                  <span class="featured-icon-container">
+                    <svg class="icon featured-icon featured-icon-star" width="25" height="23">
+                      <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                  </span>
+                  <span class="featured-restaurant-stars">50</span>
+                </div>
+              </div>
+            </div>
+            <button class="featured-btn featured-btn-now">Open Now</button>
+          </li>
+          <li class="featured-item">
+            <img srcset="./images/5featured/image5.jpg 1x, ./images/5featured/image5@2x.jpg 2x"
+              src="./images/5featured/image5.jpg" class="featured-item-img" width="357" height="301"
+              alt="steak with sauce" />
+
+            <div class="featured-badge-group">
+              <div class="featured-badge featured-badge-first">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-bookmark"></use>
+                </svg>
+                <p class="featured-badge-text">10% off</p>
+              </div>
+              <div class="featured-badge featured-badge-second">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-time"></use>
+                </svg>
+                <p class="featured-badge-text">Fast</p>
+              </div>
+            </div>
+
+            <div class="featured-restaurant-container">
+              <img src="./images/5featured/logo5.png" class="featured-restaurant-img" width="64" height="64"
+                alt="Ruby Tuesday logo" />
+              <div class="featured-restaurant-info">
+                <h3 class="featured-restaurant-title">Ruby Tuesday</h3>
+                <div class="featured-restaurant-stars-container">
+                  <span class="featured-icon-container">
+                    <svg class="icon featured-icon featured-icon-star" width="25" height="23">
+                      <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                  </span>
+                  <span class="featured-restaurant-stars">26</span>
+                </div>
+              </div>
+            </div>
+            <button class="featured-btn featured-btn-now">Open Now</button>
+          </li>
+          <li class="featured-item">
+            <img srcset="./images/5featured/image6.jpg 1x, ./images/5featured/image6@2x.jpg 2x"
+              src="./images/5featured/image6.jpg" class="featured-item-img" width="357" height="301"
+              alt="fatty meat with potatoes" />
+
+            <div class="featured-badge-group">
+              <div class="featured-badge featured-badge-first">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-bookmark"></use>
+                </svg>
+                <p class="featured-badge-text">25% off</p>
+              </div>
+              <div class="featured-badge featured-badge-second">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-time"></use>
+                </svg>
+                <p class="featured-badge-text">Fast</p>
+              </div>
+            </div>
+
+            <div class="featured-restaurant-container">
+              <img src="./images/5featured/logo6.png" class="featured-restaurant-img" width="64" height="64"
+                alt="Kuakata Fried Chicken logo" />
+              <div class="featured-restaurant-info">
+                <h3 class="featured-restaurant-title">Kuakata Fried Chicken</h3>
+                <div class="featured-restaurant-stars-container">
+                  <span class="featured-icon-container">
+                    <svg class="icon featured-icon featured-icon-star" width="25" height="23">
+                      <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                  </span>
+                  <span class="featured-restaurant-stars">53</span>
+                </div>
+              </div>
+            </div>
+            <button class="featured-btn featured-btn-now">Open Now</button>
+          </li>
+          <li class="featured-item">
+            <img srcset="./images/5featured/image7.jpg 1x, ./images/5featured/image7@2x.jpg 2x"
+              src="./images/5featured/image7.jpg" class="featured-item-img" width="357" height="301" alt="cream soup" />
+
+            <div class="featured-badge-group">
+              <div class="featured-badge featured-badge-first">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-bookmark"></use>
+                </svg>
+                <p class="featured-badge-text">10% off</p>
+              </div>
+              <div class="featured-badge featured-badge-second">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-time"></use>
+                </svg>
+                <p class="featured-badge-text">Fast</p>
+              </div>
+            </div>
+
+            <div class="featured-restaurant-container">
+              <img src="./images/5featured/logo7.png" class="featured-restaurant-img" width="64" height="64"
+                alt="Red Square logo" />
+              <div class="featured-restaurant-info">
+                <h3 class="featured-restaurant-title">Red Square</h3>
+                <div class="featured-restaurant-stars-container">
+                  <span class="featured-icon-container">
+                    <svg class="icon featured-icon featured-icon-star" width="25" height="23">
+                      <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                  </span>
+                  <span class="featured-restaurant-stars">45</span>
+                </div>
+              </div>
+            </div>
+            <button class="featured-btn featured-btn-now">Open Now</button>
+          </li>
+          <li class="featured-item">
+            <img srcset="./images/5featured/image8.jpg 1x, ./images/5featured/image8@2x.jpg 2x"
+              src="./images/5featured/image8.jpg" class="featured-item-img" width="357" height="301" alt="omelette with bacon
+" />
+
+            <div class="featured-badge-group">
+              <div class="featured-badge featured-badge-first">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-bookmark"></use>
+                </svg>
+                <p class="featured-badge-text">10% off</p>
+              </div>
+              <div class="featured-badge featured-badge-second">
+                <svg class="icon featured-icon" width="18" height="22">
+                  <use href="./images/icons.svg#icon-time"></use>
+                </svg>
+                <p class="featured-badge-text">Fast</p>
+              </div>
+            </div>
+
+            <div class="featured-restaurant-container">
+              <img src="./images/5featured/logo8.png" class="featured-restaurant-img" width="64" height="64"
+                alt="Taco Bell logo" />
+              <div class="featured-restaurant-info">
+                <h3 class="featured-restaurant-title">Taco Bell</h3>
+                <div class="featured-restaurant-stars-container">
+                  <span class="featured-icon-container">
+                    <svg class="icon featured-icon featured-icon-star" width="25" height="23">
+                      <use href="./images/icons.svg#icon-star"></use>
+                    </svg>
+                  </span>
+                  <span class="featured-restaurant-stars">35</span>
+                </div>
+              </div>
+            </div>
+            <button class="featured-btn featured-btn-now">Open Now</button>
+          </li>
+        </ul>
+
+      </div>
+      <button class="featured-btn-view-all">View All</button>
+
+    </section>
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>
