@@ -12,36 +12,37 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./src/css/styles.css" />
 </head>
 
 <body>
+  <!-- HEADER SECTION -->
   <header class="container header">
     <nav class="header-nav">
 
       <a class="header-nav-link" href="./index.html">
-        <img class="logo" src="./images/logo.svg" alt="logo burger" width="28" />
+        <img class="logo" src="./src/img/logo.svg" alt="logo burger" width="28" />
         <span>food</span><span>waGon</span></a>
       <div class="header-location">
         <span>Deliver to:</span>
         <svg class="icon header-location-icon" width="14" height="25">
-          <use href="./images/icons.svg#icon-map-marker"></use>
+          <use href="./src/img/icons.svg#icon-map-marker"></use>
         </svg>
-        <p class="header-location-current">Current Location</p>
+        <!-- <p class="header-location-current">Current Location</p> -->
         <p class="header-location-text">Mohammadpur Bus Stand, Dhaka</p>
       </div>
 
       <div class="header-group">
         <div class="header-input-wrapper">
           <svg class="icon header-search-icon" width="18" height="28">
-            <use href="./images/icons.svg#icon-search"></use>
+            <use href="./src/img/icons.svg#icon-search"></use>
           </svg>
           <input class="search-input" type="text" placeholder="Search Food" />
         </div>
 
         <button class="header-btn" type="button">
           <svg class="icon login-icon" width="16" height="18">
-            <use href="./images/icons.svg#icon-user"></use>
+            <use href="./src/img/icons.svg#icon-user"></use>
           </svg>
           Login
         </button>
@@ -62,15 +63,15 @@
         <div class="hero-form-container">
           <div class="hero-form-container-btn">
 
-            <button class="hero-container-btn" type="button">
+            <button class="hero-container-btn" type="button" data-option="delivery">
               <svg class="icon login-icon" width="23" height="18">
-                <use href="./images/icons.svg#icon-bike"></use>
+                <use href="./src/img/icons.svg#icon-bike"></use>
               </svg>
               Delivery
             </button>
-            <button class="hero-container-btn" type="button">
+            <button class="hero-container-btn" type="button" data-option="pickup">
               <svg class="icon login-icon" width="16" height="18">
-                <use href="./images/icons.svg#icon-shoper"></use>
+                <use href="./src/img/icons.svg#icon-shoper"></use>
               </svg>
               Pickup
             </button>
@@ -80,16 +81,16 @@
             <label for="email">
               <span class="hero-input-wrapper">
                 <svg class="icon hero-search-icon" width="18" height="34">
-                  <use href="./images/icons.svg#icon-map-marker"></use>
+                  <use href="./src/img/icons.svg#icon-map-marker"></use>
                 </svg>
-                <input class="hero-form-input" type="email" id="email" placeholder="Enter Your Address" />
+                <input class="hero-form-input" type="text" name="input" id="text" placeholder="Enter Your Address" />
               </span>
             </label>
 
 
             <button class="hero-form-btn" type="submit">
               <svg class="icon hero-location-icon" width="14" height="14">
-                <use href="./images/icons.svg#icon-search"></use>
+                <use href="./src/img/icons.svg#icon-search"></use>
               </svg>
               Find Food
             </button>
@@ -105,8 +106,8 @@
         <ul class="top-items-list">
           <li class="top-items-item">
             <div>
-              <img srcset="./images/top-items/dish1.jpg 1x, ./images/top-items/dish1@2x.jpg 2x"
-                src="./images/top-items/dish1.jpg" class="top-item-img" width="357" height="301"
+              <img srcset="./src/img/top-items/dish1.jpg 1x, ./src/img/top-items/dish1@2x.jpg 2x"
+                src="./src/img/top-items/dish1.jpg" class="top-item-img" width="357" height="301"
                 alt="Greys Vage discount 15%" />
               <div class="top-item-discount-group">
                 <p class="top-item-discount">15</p>
@@ -124,8 +125,8 @@
           </li>
           <li class="top-items-item">
             <div>
-              <img srcset="./images/top-items/dish2.jpg 1x, ./images/top-items/dish2@2x.jpg 2x"
-                src="./images/top-items/dish2.jpg" class="top-item-img" width="357" height="301"
+              <img srcset="./src/img/top-items/dish2.jpg 1x, ./src/img/top-items/dish2@2x.jpg 2x"
+                src="./src/img/top-items/dish2.jpg" class="top-item-img" width="357" height="301"
                 alt="Greys Vage discount 10%" />
               <div class="top-item-discount-group">
                 <p class="top-item-discount">10</p>
@@ -144,8 +145,8 @@
           </li>
           <li class="top-items-item">
             <div>
-              <img srcset="./images/top-items/dish3.jpg 1x, ./images/top-items/dish3@2x.jpg 2x"
-                src="./images/top-items/dish3.jpg" class="top-item-img" width="357" height="301"
+              <img srcset="./src/img/top-items/dish3.jpg 1x, ./src/img/top-items/dish3@2x.jpg 2x"
+                src="./src/img/top-items/dish3.jpg" class="top-item-img" width="357" height="301"
                 alt="Greys Vage discount 25%" />
               <div class="top-item-discount-group">
                 <p class="top-item-discount">25</p>
@@ -164,8 +165,8 @@
           </li>
           <li class="top-items-item">
             <div>
-              <img srcset="./images/top-items/dish4.jpg 1x, ./images/top-items/dish4@2x.jpg 2x"
-                src="./images/top-items/dish4.jpg" class="top-item-img" width="357" height="301"
+              <img srcset="./src/img/top-items/dish4.jpg 1x, ./src/img/top-items/dish4@2x.jpg 2x"
+                src="./src/img/top-items/dish4.jpg" class="top-item-img" width="357" height="301"
                 alt="Greys Vage discount 20%" />
               <div class="top-item-discount-group">
                 <p class="top-item-discount">20</p>
@@ -191,50 +192,50 @@
       <h2 class="how-title">How does it work</h2>
       <ul class="how-list">
         <li class="how-item">
-          <img class="how-item-icon" src="./images/3how/icon1.png" alt="Select location" width="86" height="112">
+          <img class="how-item-icon" src="./src/img/3how/icon1.png" alt="Select location" width="86" height="112">
           <p class="top-item-text-title">Select location</p>
           <p class="top-item-text-subtitle">Choose the location where your food will be delivered</p>
         </li>
         <li class="how-item">
-          <img class="how-item-icon" src="./images/3how/icon2.png" alt="Select location" width="87" height="112">
+          <img class="how-item-icon" src="./src/img/3how/icon2.png" alt="Select location" width="87" height="112">
           <p class="top-item-text-title">Choose order</p>
           <p class="top-item-text-subtitle">Check over hundreds of menus to pick your favorite food</p>
         </li>
         <li class="how-item">
-          <img class="how-item-icon" src="./images/3how/icon3.png" alt="Select location" width="72" height="112">
+          <img class="how-item-icon" src="./src/img/3how/icon3.png" alt="Select location" width="72" height="112">
           <p class="top-item-text-title">Pay advanced</p>
           <p class="top-item-text-subtitle">It's quick, safe, and simple. Select several methods of payment</p>
         </li>
         <li class="how-item">
-          <img class="how-item-icon" src="./images/3how/icon4.png" alt="Select location" width="112" height="112">
+          <img class="how-item-icon" src="./src/img/3how/icon4.png" alt="Select location" width="112" height="112">
           <p class="top-item-text-title">Enjoy meals</p>
           <p class="top-item-text-subtitle">Food is made and delivered directly to your home</p>
         </li>
       </ul>
     </section>
     <!-- section 4 Popular items -->
-    <section class="popular-section">
-      <div class="popular-slider">
+    <section class="popular-section" id="popular-top">
+      <div class="popular-slider carousel">
         <button class="slider-btn popular-prev-btn">
           <svg class="icon popular-icon" width="76">
-            <use href="./images/icons.svg#icon-btn-left"></use>
+            <use href="./src/img/icons.svg#icon-btn-left"></use>
           </svg>
         </button>
 
         <div class="popular-item-group">
           <h2 class="popular-items-title">Popular items</h2>
-          <ul class="popular-items-list">
-            <li class="popular-items-item">
+          <ul class="popular-items-list carousel-track">
+            <li class="popular-items-item carousel-image carousel-image">
               <div>
-                <img srcset="./images/4popular/item1.jpg 1x, ./images/4popular/item1@2x.jpg 2x"
-                  src="./images/4popular/item1.jpg " class="popular-item-img" width="282" height="283"
+                <img srcset="./src/img/4popular/item1.jpg 1x, ./src/img/4popular/item1@2x.jpg 2x"
+                  src="./src/img/4popular/item1.jpg " class="popular-item-img" width="282" height="283"
                   alt="Cheese Burger" />
                 <div class="popular-item-group">
                   <h3 class="popular-item-title">Cheese Burger</h3>
                   <div class="popular-area-group">
                     <span class="popular-icon-container">
                       <svg class="icon header-location-icon" width="14" height="25">
-                        <use href="./images/icons.svg#icon-map-marker"></use>
+                        <use href="./src/img/icons.svg#icon-map-marker"></use>
                       </svg>
                     </span>
                     <p class="popular-item-area">Burger Arena</p>
@@ -244,17 +245,17 @@
                 <button class="popular-item-btn">Order Now</button>
               </div>
             </li>
-            <li class="popular-items-item">
+            <li class="popular-items-item carousel-image">
               <div>
-                <img srcset="./images/4popular/item2.jpg 1x, ./images/4popular/item2@2x.jpg 2x"
-                  src="./images/4popular/item2.jpg " class="popular-item-img" width="282" height="283"
+                <img srcset="./src/img/4popular/item2.jpg 1x, ./src/img/4popular/item2@2x.jpg 2x"
+                  src="./src/img/4popular/item2.jpg " class="popular-item-img" width="282" height="283"
                   alt="Top Sticks" />
                 <div class="popular-item-group">
                   <h4 class="popular-item-title">Toffe’s Cake</h4>
                   <div class="popular-area-group">
                     <span class="popular-icon-container">
                       <svg class="icon header-location-icon" width="14" height="25">
-                        <use href="./images/icons.svg#icon-map-marker"></use>
+                        <use href="./src/img/icons.svg#icon-map-marker"></use>
                       </svg>
                     </span>
                     <p class="popular-item-area">Top Sticks</p>
@@ -264,16 +265,16 @@
                 <button class="popular-item-btn">Order Now</button>
               </div>
             </li>
-            <li class="popular-items-item">
+            <li class="popular-items-item carousel-image">
               <div>
-                <img srcset="./images/4popular/item3.jpg 1x, ./images/4popular/item3@2x.jpg 2x"
-                  src="./images/4popular/item3.jpg " class="popular-item-img" width="282" height="283" alt="Dancake" />
+                <img srcset="./src/img/4popular/item3.jpg 1x, ./src/img/4popular/item3@2x.jpg 2x"
+                  src="./src/img/4popular/item3.jpg " class="popular-item-img" width="282" height="283" alt="Dancake" />
                 <div class="popular-item-group">
                   <h4 class="popular-item-title">Dancake</h4>
                   <div class="popular-area-group">
                     <span class="popular-icon-container">
                       <svg class="icon header-location-icon" width="14" height="25">
-                        <use href="./images/icons.svg#icon-map-marker"></use>
+                        <use href="./src/img/icons.svg#icon-map-marker"></use>
                       </svg>
                     </span>
                     <p class="popular-item-area">Cake World</p>
@@ -283,17 +284,17 @@
                 <button class="popular-item-btn">Order Now</button>
               </div>
             </li>
-            <li class="popular-items-item">
+            <li class="popular-items-item carousel-image">
               <div>
-                <img srcset="./images/4popular/item4.jpg 1x, ./images/4popular/item4@2x.jpg 2x"
-                  src="./images/4popular/item4.jpg " class="popular-item-img" width="282" height="283"
+                <img srcset="./src/img/4popular/item4.jpg 1x, ./src/img/4popular/item4@2x.jpg 2x"
+                  src="./src/img/4popular/item4.jpg " class="popular-item-img" width="282" height="283"
                   alt="Crispy Sandwitch" />
                 <div class="popular-item-group">
                   <h4 class="popular-item-title">Crispy Sandwitch</h4>
                   <div class="popular-area-group">
                     <span class="popular-icon-container">
                       <svg class="icon header-location-icon" width="14" height="25">
-                        <use href="./images/icons.svg#icon-map-marker"></use>
+                        <use href="./src/img/icons.svg#icon-map-marker"></use>
                       </svg>
                     </span>
                     <p class="popular-item-area">Fastfood Dine</p>
@@ -303,17 +304,17 @@
                 <button class="popular-item-btn">Order Now</button>
               </div>
             </li>
-            <li class="popular-items-item">
+            <li class="popular-items-item carousel-image">
               <div>
-                <img srcset="./images/4popular/item5.jpg 1x, ./images/4popular/item5@2x.jpg 2x"
-                  src="./images/4popular/item5.jpg " class="popular-item-img" width="282" height="283"
+                <img srcset="./src/img/4popular/item5.jpg 1x, ./src/img/4popular/item5@2x.jpg 2x"
+                  src="./src/img/4popular/item5.jpg " class="popular-item-img" width="282" height="283"
                   alt="Thai  Soup" />
                 <div class="popular-item-group">
                   <h4 class="popular-item-title">Thai Soup</h4>
                   <div class="popular-area-group">
                     <span class="popular-icon-container">
                       <svg class="icon header-location-icon" width="14" height="25">
-                        <use href="./images/icons.svg#icon-map-marker"></use>
+                        <use href="./src/img/icons.svg#icon-map-marker"></use>
                       </svg>
                     </span>
                     <p class="popular-item-area">Foody man</p>
@@ -328,7 +329,7 @@
 
         <button class="slider-btn popular-next-btn">
           <svg class="icon popular-icon" width="76">
-            <use href="./images/icons.svg#icon-btn-right"></use>
+            <use href="./src/img/icons.svg#icon-btn-right"></use>
           </svg>
         </button>
       </div>
@@ -340,32 +341,33 @@
         <h2 class="featured-title">Featured Restaurants</h2>
         <ul class="featured-list">
           <li class="featured-item">
-            <img srcset="./images/5feature/image1.jpg 1x, ./images/5feature/image1@2x.jpg 2x"
-              src="./images/5feature/image1.jpg" class="featured-item-img" width="357" height="301" alt="main course" />
+            <img srcset="./src/img/5feature/image1.jpg 1x, ./src/img/5feature/image1@2x.jpg 2x"
+              src="./src/img/5feature/image1.jpg" class="featured-item hidden-img" width="357" height="301"
+              alt="main course" />
             <div class="featured-badge-group">
 
               <div class="featured-badge featured-badge-first">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-bookmark"></use>
+                  <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <p class="featured-badge-text">20% off</p>
               </div>
               <div class="featured-badge featured-badge-second">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-time"></use>
+                  <use href="./src/img/icons.svg#icon-time"></use>
                 </svg>
                 <p class="featured-badge-text">Fast</p>
               </div>
             </div>
             <div class="featured-restaurant-container">
-              <img src="./images/5feature/logo1.png" class="featured-restaurant-img" width="64" height="64"
+              <img src="./src/img/5feature/logo1.png" class="featured-restaurant-img" width="64" height="64"
                 alt="Foodworld logo" />
               <div class="featured-restaurant-info">
                 <h3 class="featured-restaurant-title">Foodworld</h3>
                 <div class="featured-restaurant-stars-container">
                   <span class="featured-icon-container">
                     <svg class="icon featured-icon featured-icon-star" width="25" height="23">
-                      <use href="./images/icons.svg#icon-star"></use>
+                      <use href="./src/img/icons.svg#icon-star"></use>
                     </svg>
                   </span>
                   <span class="featured-restaurant-stars">46</span>
@@ -375,34 +377,34 @@
             <button class="featured-btn featured-btn-tomorrow">Opens tomorrow</button>
           </li>
           <li class="featured-item">
-            <img srcset="./images/5feature/image2.jpg 1x, ./images/5feature/image2@2x.jpg 2x"
-              src="./images/5feature/image2.jpg" class="featured-item-img" width="357" height="301"
+            <img srcset="./src/img/5feature/image2.jpg 1x, ./src/img/5feature/image2@2x.jpg 2x"
+              src="./src/img/5feature/image2.jpg" class="featured-item hidden-img" width="357" height="301"
               alt="banana dessert" />
 
             <div class="featured-badge-group">
               <div class="featured-badge featured-badge-first">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-bookmark"></use>
+                  <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <p class="featured-badge-text">15% off</p>
               </div>
               <div class="featured-badge featured-badge-second">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-time"></use>
+                  <use href="./src/img/icons.svg#icon-time"></use>
                 </svg>
                 <p class="featured-badge-text">Fast</p>
               </div>
             </div>
 
             <div class="featured-restaurant-container">
-              <img src="./images/5feature/logo2.png" class="featured-restaurant-img" width="64" height="64"
+              <img src="./src/img/5feature/logo2.png" class="featured-restaurant-img" width="64" height="64"
                 alt="Pizzahub logo" />
               <div class="featured-restaurant-info">
                 <h3 class="featured-restaurant-title">Pizzahub</h3>
                 <div class="featured-restaurant-stars-container">
                   <span class="featured-icon-container">
                     <svg class="icon featured-icon featured-icon-star" width="25" height="23">
-                      <use href="./images/icons.svg#icon-star"></use>
+                      <use href="./src/img/icons.svg#icon-star"></use>
                     </svg>
                   </span>
                   <span class="featured-restaurant-stars">40</span>
@@ -412,33 +414,34 @@
             <button class="featured-btn featured-btn-tomorrow">Opens tomorrow</button>
           </li>
           <li class="featured-item">
-            <img srcset="./images/5feature/image3.jpg 1x, ./images/5feature/image3@2x.jpg 2x"
-              src="./images/5feature/image3.jpg" class="featured-item-img" width="357" height="301" alt="pancakes" />
+            <img srcset="./src/img/5feature/image3.jpg 1x, ./src/img/5feature/image3@2x.jpg 2x"
+              src="./src/img/5feature/image3.jpg" class="featured-item hidden-img" width="357" height="301"
+              alt="pancakes" />
 
             <div class="featured-badge-group">
               <div class="featured-badge featured-badge-first">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-bookmark"></use>
+                  <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <p class="featured-badge-text">10% off</p>
               </div>
               <div class="featured-badge featured-badge-second">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-time"></use>
+                  <use href="./src/img/icons.svg#icon-time"></use>
                 </svg>
                 <p class="featured-badge-text">Fast</p>
               </div>
             </div>
 
             <div class="featured-restaurant-container">
-              <img src="./images/5feature/logo3.png" class="featured-restaurant-img" width="64" height="64"
+              <img src="./src/img/5feature/logo3.png" class="featured-restaurant-img" width="64" height="64"
                 alt="Donuts hut logo" />
               <div class="featured-restaurant-info">
                 <h3 class="featured-restaurant-title">Donuts hut</h3>
                 <div class="featured-restaurant-stars-container">
                   <span class="featured-icon-container">
                     <svg class="icon featured-icon featured-icon-star" width="25" height="23">
-                      <use href="./images/icons.svg#icon-star"></use>
+                      <use href="./src/img/icons.svg#icon-star"></use>
                     </svg>
                   </span>
                   <span class="featured-restaurant-stars">20</span>
@@ -447,34 +450,35 @@
             </div>
             <button class="featured-btn featured-btn-now">Open Now</button>
           </li>
-          <li class="featured-item">
-            <img srcset="./images/5feature/image4.jpg 1x, ./images/5feature/image4@2x.jpg 2x"
-              src="./images/5feature/image4.jpg" class="featured-item-img" width="357" height="301" alt="pink cake" />
+          <li class="featured-item ">
+            <img srcset="./src/img/5feature/image4.jpg 1x, ./src/img/5feature/image4@2x.jpg 2x"
+              src="./src/img/5feature/image4.jpg" class="featured-item hidden-img" width="357" height="301"
+              alt="pink cake" />
 
             <div class="featured-badge-group">
               <div class="featured-badge featured-badge-first">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-bookmark"></use>
+                  <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <p class="featured-badge-text">15% off</p>
               </div>
               <div class="featured-badge featured-badge-second">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-time"></use>
+                  <use href="./src/img/icons.svg#icon-time"></use>
                 </svg>
                 <p class="featured-badge-text">Fast</p>
               </div>
             </div>
 
             <div class="featured-restaurant-container">
-              <img src="./images/5feature/logo4.png" class="featured-restaurant-img" width="64" height="64"
+              <img src="./src/img/5feature/logo4.png" class="featured-restaurant-img" width="64" height="64"
                 alt="SubWay logo" />
               <div class="featured-restaurant-info">
                 <h3 class="featured-restaurant-title">SubWay</h3>
                 <div class="featured-restaurant-stars-container">
                   <span class="featured-icon-container">
                     <svg class="icon featured-icon featured-icon-star" width="25" height="23">
-                      <use href="./images/icons.svg#icon-star"></use>
+                      <use href="./src/img/icons.svg#icon-star"></use>
                     </svg>
                   </span>
                   <span class="featured-restaurant-stars">50</span>
@@ -483,35 +487,35 @@
             </div>
             <button class="featured-btn featured-btn-now">Open Now</button>
           </li>
-          <li class="featured-item">
-            <img srcset="./images/5feature/image5.jpg 1x, ./images/5feature/image5@2x.jpg 2x"
-              src="./images/5feature/image5.jpg" class="featured-item-img" width="357" height="301"
+          <li class="featured-item ">
+            <img srcset="./src/img/5feature/image5.jpg 1x, ./src/img/5feature/image5@2x.jpg 2x"
+              src="./src/img/5feature/image5.jpg" class="featured-item hidden-img" width="357" height="301"
               alt="steak with sauce" />
 
             <div class="featured-badge-group">
               <div class="featured-badge featured-badge-first">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-bookmark"></use>
+                  <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <p class="featured-badge-text">10% off</p>
               </div>
               <div class="featured-badge featured-badge-second">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-time"></use>
+                  <use href="./src/img/icons.svg#icon-time"></use>
                 </svg>
                 <p class="featured-badge-text">Fast</p>
               </div>
             </div>
 
             <div class="featured-restaurant-container">
-              <img src="./images/5feature/logo5.png" class="featured-restaurant-img" width="64" height="64"
+              <img src="./src/img/5feature/logo5.png" class="featured-restaurant-img" width="64" height="64"
                 alt="Ruby Tuesday logo" />
               <div class="featured-restaurant-info">
                 <h3 class="featured-restaurant-title">Ruby Tuesday</h3>
                 <div class="featured-restaurant-stars-container">
                   <span class="featured-icon-container">
                     <svg class="icon featured-icon featured-icon-star" width="25" height="23">
-                      <use href="./images/icons.svg#icon-star"></use>
+                      <use href="./src/img/icons.svg#icon-star"></use>
                     </svg>
                   </span>
                   <span class="featured-restaurant-stars">26</span>
@@ -520,35 +524,35 @@
             </div>
             <button class="featured-btn featured-btn-now">Open Now</button>
           </li>
-          <li class="featured-item">
-            <img srcset="./images/5feature/image6.jpg 1x, ./images/5feature/image6@2x.jpg 2x"
-              src="./images/5feature/image6.jpg" class="featured-item-img" width="357" height="301"
+          <li class="featured-item ">
+            <img srcset="./src/img/5feature/image6.jpg 1x, ./src/img/5feature/image6@2x.jpg 2x"
+              src="./src/img/5feature/image6.jpg" class="featured-item hidden-img" width="357" height="301"
               alt="fatty meat with potatoes" />
 
             <div class="featured-badge-group">
               <div class="featured-badge featured-badge-first">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-bookmark"></use>
+                  <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <p class="featured-badge-text">25% off</p>
               </div>
               <div class="featured-badge featured-badge-second">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-time"></use>
+                  <use href="./src/img/icons.svg#icon-time"></use>
                 </svg>
                 <p class="featured-badge-text">Fast</p>
               </div>
             </div>
 
             <div class="featured-restaurant-container">
-              <img src="./images/5feature/logo6.png" class="featured-restaurant-img" width="64" height="64"
+              <img src="./src/img/5feature/logo6.png" class="featured-restaurant-img" width="64" height="64"
                 alt="Kuakata Fried Chicken logo" />
               <div class="featured-restaurant-info">
                 <h3 class="featured-restaurant-title">Kuakata Fried Chicken</h3>
                 <div class="featured-restaurant-stars-container">
                   <span class="featured-icon-container">
                     <svg class="icon featured-icon featured-icon-star" width="25" height="23">
-                      <use href="./images/icons.svg#icon-star"></use>
+                      <use href="./src/img/icons.svg#icon-star"></use>
                     </svg>
                   </span>
                   <span class="featured-restaurant-stars">53</span>
@@ -557,34 +561,35 @@
             </div>
             <button class="featured-btn featured-btn-now">Open Now</button>
           </li>
-          <li class="featured-item">
-            <img srcset="./images/5feature/image7.jpg 1x, ./images/5feature/image7@2x.jpg 2x"
-              src="./images/5feature/image7.jpg" class="featured-item-img" width="357" height="301" alt="cream soup" />
+          <li class="featured-item ">
+            <img srcset="./src/img/5feature/image7.jpg 1x, ./src/img/5feature/image7@2x.jpg 2x"
+              src="./src/img/5feature/image7.jpg" class="featured-item hidden-img" width="357" height="301"
+              alt="cream soup" />
 
             <div class="featured-badge-group">
               <div class="featured-badge featured-badge-first">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-bookmark"></use>
+                  <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <p class="featured-badge-text">10% off</p>
               </div>
               <div class="featured-badge featured-badge-second">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-time"></use>
+                  <use href="./src/img/icons.svg#icon-time"></use>
                 </svg>
                 <p class="featured-badge-text">Fast</p>
               </div>
             </div>
 
             <div class="featured-restaurant-container">
-              <img src="./images/5feature/logo7.png" class="featured-restaurant-img" width="64" height="64"
+              <img src="./src/img/5feature/logo7.png" class="featured-restaurant-img" width="64" height="64"
                 alt="Red Square logo" />
               <div class="featured-restaurant-info">
                 <h3 class="featured-restaurant-title">Red Square</h3>
                 <div class="featured-restaurant-stars-container">
                   <span class="featured-icon-container">
                     <svg class="icon featured-icon featured-icon-star" width="25" height="23">
-                      <use href="./images/icons.svg#icon-star"></use>
+                      <use href="./src/img/icons.svg#icon-star"></use>
                     </svg>
                   </span>
                   <span class="featured-restaurant-stars">45</span>
@@ -593,35 +598,35 @@
             </div>
             <button class="featured-btn featured-btn-now">Open Now</button>
           </li>
-          <li class="featured-item">
-            <img srcset="./images/5feature/image8.jpg 1x, ./images/5feature/image8@2x.jpg 2x"
-              src="./images/5feature/image8.jpg" class="featured-item-img" width="357" height="301" alt="omelette with bacon
+          <li class="featured-item ">
+            <img srcset="./src/img/5feature/image8.jpg 1x, ./src/img/5feature/image8@2x.jpg 2x"
+              src="./src/img/5feature/image8.jpg" class="featured-item hidden-img" width="357" height="301" alt="omelette with bacon
 " />
 
             <div class="featured-badge-group">
               <div class="featured-badge featured-badge-first">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-bookmark"></use>
+                  <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <p class="featured-badge-text">10% off</p>
               </div>
               <div class="featured-badge featured-badge-second">
                 <svg class="icon featured-icon" width="18" height="22">
-                  <use href="./images/icons.svg#icon-time"></use>
+                  <use href="./src/img/icons.svg#icon-time"></use>
                 </svg>
                 <p class="featured-badge-text">Fast</p>
               </div>
             </div>
 
             <div class="featured-restaurant-container">
-              <img src="./images/5feature/logo8.png" class="featured-restaurant-img" width="64" height="64"
+              <img src="./src/img/5feature/logo8.png" class="featured-restaurant-img" width="64" height="64"
                 alt="Taco Bell logo" />
               <div class="featured-restaurant-info">
                 <h3 class="featured-restaurant-title">Taco Bell</h3>
                 <div class="featured-restaurant-stars-container">
                   <span class="featured-icon-container">
                     <svg class="icon featured-icon featured-icon-star" width="25" height="23">
-                      <use href="./images/icons.svg#icon-star"></use>
+                      <use href="./src/img/icons.svg#icon-star"></use>
                     </svg>
                   </span>
                   <span class="featured-restaurant-stars">35</span>
@@ -632,82 +637,97 @@
           </li>
         </ul>
       </div>
-      <button class="featured-btn-view-all">View All</button>
+      <button class="featured-btn-view-all featured_btn_js">View All</button>
     </section>
 
     <!-- Search by Food /////////////////////////////////////////////////////////////// -->
     <section class=" search-container">
-      <div class=" search-group">
+      <div class="search-group">
         <h2 class=" search-title">Search by Food</h2>
 
         <div class="search-btn-group">
-          <button class="search-btn-view-all">View All</button>
+          <!-- <button class="search-btn-view-all">View All</button> -->
           <button class="search-prev-btn">
-            <svg class="icon search-icon" width="76" height="76">
-              <use href="./images/icons.svg#icon-btn-left"></use>
+            <svg class="icon search-icon">
+              <use href="./src/img/icons.svg#icon-btn-left"></use>
             </svg>
           </button>
           <button class="search-next-btn">
-            <svg class="icon search-icon" width="76" height="76">
-              <use href="./images/icons.svg#icon-btn-right"></use>
+            <svg class="icon search-icon">
+              <use href="./src/img/icons.svg#icon-btn-right"></use>
             </svg>
           </button>
         </div>
 
-        <ul class="search-list">
-          <li class="search-item">
-            <img srcset="./images/6search/image1.jpg 1x, ./images/6search/image1@2x.jpg 2x"
-              src="./images/6search/image1.jpg" class="search-item-img" width="218" height="218" alt="Pizza" />
-            <p class="search-item-name">Pizza</p>
-          </li>
-          <li class="search-item">
-            <img srcset="./images/6search/image2.jpg 1x, ./images/6search/image2@2x.jpg 2x"
-              src="./images/6search/image2.jpg" class="search-item-img" width="218" height="218" alt="Burger" />
-            <p class="search-item-name">Burger</p>
-          </li>
-          <li class="search-item">
-            <img srcset="./images/6search/image3.jpg 1x, ./images/6search/image3@2x.jpg 2x"
-              src="./images/6search/image3.jpg" class="search-item-img" width="218" height="218" alt="Noodles" />
-            <p class="search-item-name">Noodles</p>
-          </li>
-          <li class="search-item">
-            <img srcset="./images/6search/image4.jpg 1x, ./images/6search/image4@2x.jpg 2x"
-              src="./images/6search/image4.jpg" class="search-item-img" width="218" height="218" alt="Sub-sandiwch" />
-            <p class="search-item-name">Sub-sandiwch</p>
-          </li>
-          <li class="search-item">
-            <img srcset="./images/6search/image5.jpg 1x, ./images/6search/image5@2x.jpg 2x"
-              src="./images/6search/image5.jpg" class="search-item-img" width="218" height="218" alt="Chowmein" />
-            <p class="search-item-name">Chowmein</p>
-          </li>
-          <li class="search-item">
-            <img srcset="./images/6search/image6.jpg 1x, ./images/6search/image6@2x.jpg 2x"
-              src="./images/6search/image6.jpg" class="search-item-img" width="218" height="218" alt="Steak" />
-            <p class="search-item-name">Steak</p>
-          </li>
-        </ul>
+        <div class="swiper">
+          <ul class="search-list swiper-wrapper">
+            <li class="search-item swiper-slide">
+              <img srcset="./src/img/6search/image1.jpg 1x, ./src/img/6search/image1@2x.jpg 2x"
+                src="./src/img/6search/image1.jpg" class="search-item-img" width="218" height="218" alt="Pizza"
+                data-name="Pizza"
+                data-description="Pizza is a round, oven-baked flatbread topped with cheese, sauce, and a variety of ingredients. </br> It’s customizable to any taste and perfect for sharing with friends or family." />
+              <p class="search-item-name">Pizza</p>
+            </li>
+            <li class="search-item swiper-slide">
+              <img srcset="./src/img/6search/image2.jpg 1x, ./src/img/6search/image2@2x.jpg 2x"
+                src="./src/img/6search/image2.jpg" class="search-item-img" width="218" height="218" alt="Burger"
+                data-name="Burger" data-description="A burger is a sandwich with a juicy meat or veggie patty placed inside a sliced bun.</br>
+                It’s a quick, filling meal with endless combinations of toppings and sauces." />
+              <p class="search-item-name">Burger</p>
+            </li>
+            <li class="search-item swiper-slide">
+              <img srcset="./src/img/6search/image3.jpg 1x, ./src/img/6search/image3@2x.jpg 2x"
+                src="./src/img/6search/image3.jpg" class="search-item-img" width="218" height="218" alt="Noodles"
+                data-name="Noodles" data-description="Noodles are long, thin strands made from dough, often boiled and served with savory sauces or broth.</br>
+               They’re versatile, comforting, and absorb flavors from any cuisine beautifully." />
+
+              <p class="search-item-name">Noodles</p>
+            </li>
+            <li class="search-item swiper-slide">
+              <img srcset="./src/img/6search/image4.jpg 1x, ./src/img/6search/image4@2x.jpg 2x"
+                src="./src/img/6search/image4.jpg" class="search-item-img" width="218" height="218" alt="Sub-sandiwch"
+                data-name="Sub-sandiwch" data-description="A sub sandwich is a long roll filled with meats, cheeses, veggies, and dressings. </br>
+                It’s easy to eat on the go and can be packed with proteins and fresh ingredients." />
+              <p class="search-item-name">Sub-sandiwch</p>
+            </li>
+            <li class="search-item swiper-slide">
+              <img srcset="./src/img/6search/image5.jpg 1x, ./src/img/6search/image5@2x.jpg 2x"
+                src="./src/img/6search/image5.jpg" class="search-item-img" width="218" height="218" alt="Chowmein"
+                data-name="Chowmein" data-description="Chowmein is a Chinese stir-fried noodle dish with vegetables and meat or tofu.</br>
+                 It’s flavorful, quick to cook, and offers a perfect balance of crunch and softness." />
+              <p class="search-item-name">Chowmein</p>
+            </li>
+            <li class="search-item swiper-slide">
+              <img srcset="./src/img/6search/image6.jpg 1x, ./src/img/6search/image6@2x.jpg 2x"
+                src="./src/img/6search/image6.jpg" class="search-item-img" width="218" height="218" alt="Steak"
+                data-name="Steak" data-description=" Steak is a thick, juicy cut of beef, usually grilled or pan-seared to perfection.</br>
+                 Rich in protein and flavor, it's a hearty choice for meat lovers and a gourmet favorite." />
+              <p class="search-item-name">Steak</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- 7 Install the app /////////////////////////////////////////////////////////////// -->
     <section class="container instal-container">
-      <ul class="instal-list">
+      <ul class="instal-list" id="app-top">
         <li class="instal-item">
           <div class="instal-info-group">
-            <img src="./images/7instal/icon1.png" class="instal-icon" width="136" height="136" alt="Steak" />
+            <img src="./src/img/7instal/icon1.png" class="instal-icon" width="136" height="136" alt="Steak" />
             <p class="instal-item-title">Daily <br>
               Discounts</p>
           </div>
         </li>
         <li class="instal-item">
           <div class="instal-info-group">
-            <img src="./images/7instal/icon2.png" class="instal-icon" width="136" height="136" alt="Steak" />
+            <img src="./src/img/7instal/icon2.png" class="instal-icon" width="136" height="136" alt="Steak" />
             <p class="instal-item-title">Live <br>
               Tracing</p>
           </div>
         </li>
         <li class="instal-item">
           <div class="instal-info-group">
-            <img src="./images/7instal/icon3.png" class="instal-icon" width="136" height="136" alt="Steak" />
+            <img src="./src/img/7instal/icon3.png" class="instal-icon" width="136" height="136" alt="Steak" />
             <p class="instal-item-title">Quick <br>
               Delivery</p>
           </div>
@@ -715,21 +735,24 @@
       </ul>
 
       <div class="instal-info-group-down">
-        <img srcset="./images/7instal/screen1.png 1x, ./images/7instal/screen1@2x.png 2x"
-          src="./images/7instal/screen1.png" class="instal-img" width="602" height="759" alt="Screen phone" />
+        <img srcset="./src/img/7instal/screen1.png 1x, ./src/img/7instal/screen1@2x.png 2x"
+          src="./src/img/7instal/screen1.png" class="instal-img" width="602" height="759" alt="Screen phone" />
         <div class="instal-info-container">
           <h3 class="instal-title">Install the app</h3>
           <p class="instal-text">It's never been easier to order food. Look for the finest discounts and you'll be lost
-            in
-            a world of delectable
-            food.</p>
+            in a world of delectable food.</p>
           <div class="instal-svg-group">
-            <svg class="instal-icon" width="202.5" height="60">
-              <use href="./images/icons.svg#icon-googleplay"></use>
-            </svg>
-            <svg class="instal-icon" width="180" height="60">
-              <use href="./images/icons.svg#icon-app"></use>
-            </svg>
+            <a href="https://play.google.com/store">
+              <svg class="instal-icon" width="202.5" height="60">
+                <use href="./src/img/icons.svg#icon-googleplay"></use>
+              </svg>
+            </a>
+            <a href="https://www.apple.com/app-store/">
+
+              <svg class="instal-icon" width="180" height="60">
+                <use href="./src/img/icons.svg#icon-app"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -743,25 +766,27 @@
               <h4 class="proceed-item-title">Best deals <span class="proceed-item-title-accent">Crispy Sandwiches</span>
               </h4>
               <p class="proceed-item-text">Enjoy the large size of sandwiches. Complete perfect slice of sandwiches.</p>
-              <button class="proceed-info-btn">Proceed to order</button>
+              <!-- <button class="proceed-info-btn">Proceed to order</button>
+                -->
+              <a href="#popular-top" class="proceed-info-btn">Proceed to order</a>
             </div>
-            <img srcset="./images/8proceed/image1.jpg 1x, ./images/8proceed/image1@2x.jpg 2x"
-              src="./images/8proceed/image1.jpg" class="proceed-item-img" width="961" height="512"
-              alt="Fried Chicken" />
+            <img srcset="./src/img/8proceed/image1.jpg 1x, ./src/img/8proceed/image1@2x.jpg 2x"
+              src="./src/img/8proceed/image1.jpg" class="proceed-item-img" alt="Fried Chicken" />
+            <!-- width="961" height="512" -->
           </li>
           <li class="proceed-item">
-            <img srcset="./images/8proceed/image2.jpg 1x, ./images/8proceed/image2@2x.jpg 2x"
-              src="./images/8proceed/image2.jpg" class="proceed-item-img" width="961" height="512"
-              alt="Fried Chicken" />
+            <img srcset="./src/img/8proceed/image2.jpg 1x, ./src/img/8proceed/image2@2x.jpg 2x"
+              src="./src/img/8proceed/image2.jpg" class="proceed-item-img" alt="Fried Chicken" />
             <div class="proceed-item-container">
               <h4 class="proceed-item-title">Celebrate parties
                 with <span class="proceed-item-title-accent">Fried Chicken</span>
               </h4>
-
               <p class="proceed-item-text">Get the best fried chicken smeared with a lip smacking lemon chili flavor.
                 Check out
                 best deals for fried chicken.</p>
-              <button class="proceed-info-btn">Proceed to order</button>
+              <!-- <button class="proceed-info-btn">Proceed to order</button> -->
+              <a href="#popular-top" class="proceed-info-btn">Proceed to order</a>
+
             </div>
 
           </li>
@@ -772,12 +797,12 @@
               </h4>
 
               <p class="proceed-item-text">Pair up with a friend and enjoy the
-                hot and crispy pizza pops. Try it
-                with the best deals.</p>
-              <button class="proceed-info-btn">Proceed to order</button>
+                hot and crispy pizza pops. Try it with the best deals.</p>
+              <!-- <button class="proceed-info-btn">Proceed to order</button> -->
+              <a href="#popular-top" class="proceed-info-btn">Proceed to order</a>
             </div>
-            <img srcset="./images/8proceed/image3.jpg 1x, ./images/8proceed/image3@2x.jpg 2x"
-              src="./images/8proceed/image3.jpg" class="proceed-item-img" width="961" height="512" alt="Pizza" />
+            <img srcset="./src/img/8proceed/image3.jpg 1x, ./src/img/8proceed/image3@2x.jpg 2x"
+              src="./src/img/8proceed/image3.jpg" class="proceed-item-img" alt="Pizza" />
           </li>
         </ul>
       </div>
@@ -786,10 +811,11 @@
     <section class="container order-container">
       <div class="order-info-container">
         <h5 class="order-title">Are you ready to order with the best deals?</h5>
-        <button class="order-btn">Proceed to order</button>
-
+        <!-- <button class="order-btn">Proceed to order</button> -->
+        <a href="#app-top" class="order-btn">Proceed to order</a>
       </div>
     </section>
+
   </main>
   <footer class="footer">
     <div class="footer-container">
@@ -888,24 +914,24 @@
           <h4 class="footer-follow-title">Follow Us</h4>
           <div class="footer-svg-container">
             <svg class="footer-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
+              <use href="./src/img/icons.svg#icon-instagram"></use>
             </svg>
             <svg class="footer-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
+              <use href="./src/img/icons.svg#icon-facebook"></use>
             </svg>
             <svg class="footer-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
+              <use href="./src/img/icons.svg#icon-twitter"></use>
             </svg>
           </div>
           <p class="footer-follow-text">Receive exclusive offers in your mailbox</p>
           <form class="footer-form">
             <label for="email">
               <span class="footer-input-wrapper">
-                <a href="">
-                  <svg class=" footer-search-icon" width="24" height="34">
-                    <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>
-                </a>
+                <!-- <a href=""> -->
+                <svg class=" footer-search-icon" width="24" height="34">
+                  <use href="./src/img/icons.svg#icon-mail"></use>
+                </svg>
+                <!-- </a> -->
                 <input class="footer-form-input" type="email" id="email" placeholder="Enter Your email" />
               </span>
             </label>
@@ -915,6 +941,38 @@
       </div>
     </div>
   </footer>
+
+  <div class="scroll">
+    <button class="scroll-to-top">
+      <svg class="icon popular-icon" width="76">
+        <use href="./src/img/icons.svg#icon-btn-left"></use>
+      </svg>
+    </button>
+  </div>
+
+
+  <div class="header-modal">
+    <div class="header-modal-content">
+      <h2>Registration</h2>
+      <form class="header-modal-form">
+        <label for="name">
+          <input class="header-modal-form-input" type="text" id="name" placeholder="Enter Your Name" required />
+        </label>
+
+        <label for="email">
+          <input class="header-modal-form-input" type="email" id="email" placeholder="Enter Your Email" />
+        </label>
+
+        <label for="password">
+          <input class="header-modal-form-input" type="password" id="password" placeholder="Enter Your Password" />
+        </label>
+        <button class="header-modal-form-btn" type="submit">Registration</button>
+      </form>
+      <span class="header-modal-close-btn" title="Close Modal">&times;</span>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
