@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [],
   build: {
     commonjsOptions: {
-      include: ["izitoast"],
+      include: ["izitoast", "axios", "basiclightbox", "swiper"],
     },
   },
 });
