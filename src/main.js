@@ -100,7 +100,7 @@ const swiper = new Swiper(".swiper", {
   modules: [Autoplay, Navigation],
   //   loop: true,
   slidesPerView: "auto",
-  // centeredSlides: true,
+  //  centeredSlides: true,
   spaceBetween: 10,
   freeMode: true,
   freeModeMomentum: false,
