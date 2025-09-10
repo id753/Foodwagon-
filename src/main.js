@@ -96,7 +96,7 @@ buttonFeatured.addEventListener("click", () => {
 
 //! Scroll Swiper (Search by Food)
 const swiper = new Swiper(".swiper", {
-  modules: [Autoplay, Navigation],
+  // modules: [Autoplay, Navigation],
   //   loop: true,
   slidesPerView: "auto",
   //  centeredSlides: true,
