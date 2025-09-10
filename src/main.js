@@ -1,12 +1,12 @@
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
+// import iziToast from "izitoast";
+// import "izitoast/dist/css/iziToast.min.css";
 
-import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
+// import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
+// import "swiper/css";
+// import "swiper/css/navigation";
 
-import axios from "axios";
-import * as basicLightbox from "basiclightbox";
+// import axios from "axios";
+// import * as basicLightbox from "basiclightbox";
 
 //!  Form submit  (Header)
 const formHeader = document.querySelector(".header-modal-form");
