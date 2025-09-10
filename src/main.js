@@ -1,7 +1,6 @@
-// import axios from "axios";
-
-import iziToast from "izitoast";
-import Swiper from "swiper";
+import * as axios from "axios";
+import * as iziToast from "izitoast";
+import * as Swiper from "swiper";
 import * as basicLightbox from "basiclightbox";
 
 import { Navigation, Pagination, Autoplay } from "swiper/modules";

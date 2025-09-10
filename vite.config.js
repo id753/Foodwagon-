@@ -1,9 +1,13 @@
-// vite.config.js
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  // Base public path when served in production.
-  // Make sure to replace 'your-repository-name' with the actual name of your GitHub repository.
+  // Базовый публичный путь для продакшн-окружения
+  // Замените 'your-repository-name' на имя вашего репозитория
   base: "/Foodwagon-/",
-  plugins: [], // Any other plugins you might have
+  plugins: [],
+  build: {
+    commonjsOptions: {
+      include: ["izitoast"],
+    },
+  },
 });
