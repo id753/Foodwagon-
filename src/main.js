@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "basiclightbox/dist/basicLightbox.min.css";
 
-//!  Form submit (Header)
+//!  Form submit  (Header)
 const formHeader = document.querySelector(".header-modal-form");
 const formContainerHeader = document.querySelector(".header-modal");
 const buttonHeader = document.querySelector(".header-btn");
