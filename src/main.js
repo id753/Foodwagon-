@@ -1,15 +1,14 @@
-import * as axios from "axios";
-import * as iziToast from "izitoast";
-import * as Swiper from "swiper";
-import * as basicLightbox from "basiclightbox";
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
 
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import "basiclightbox/dist/basicLightbox.min.css";
 
-//!  Form submit  (Header)
+import axios from "axios";
+import * as basicLightbox from "basiclightbox";
+
+//!  Form submit  (Header)
 const formHeader = document.querySelector(".header-modal-form");
 const formContainerHeader = document.querySelector(".header-modal");
 const buttonHeader = document.querySelector(".header-btn");
@@ -79,7 +78,7 @@ nextBtn.addEventListener("click", () => {
   list.scrollBy({ left: scrollAmount, behavior: "smooth" });
 });
 
-//! Show-all content  (Featured Restaurants)
+//! Show-all content  (Featured Restaurants)
 const buttonFeatured = document.querySelector(".featured_btn_js");
 const hiddenItems = document.querySelectorAll(".featured-item");
 
@@ -98,9 +97,9 @@ buttonFeatured.addEventListener("click", () => {
 //! Scroll Swiper (Search by Food)
 const swiper = new Swiper(".swiper", {
   modules: [Autoplay, Navigation],
-  //   loop: true,
+  //   loop: true,
   slidesPerView: "auto",
-  //  centeredSlides: true,
+  //  centeredSlides: true,
   spaceBetween: 10,
   freeMode: true,
   freeModeMomentum: false,
