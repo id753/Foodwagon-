@@ -1,4 +1,5 @@
-import axios from "axios";
+// import axios from "axios";
+
 import iziToast from "izitoast";
 import Swiper from "swiper";
 import * as basicLightbox from "basiclightbox";
