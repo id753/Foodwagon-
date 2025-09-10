@@ -1,4 +1,6 @@
 import axios from "axios";
+import iziToast from "izitoast";
+
 //! Form submit (Header)
 const formHeader = document.querySelector(".header-modal-form");
 const formContainerHeader = document.querySelector(".header-modal");
@@ -10,17 +12,29 @@ async function SubmitFormHeader(e) {
   e.preventDefault();
   const data = {
     name: formHeader.elements["name"].value.trim(),
-    email: formHeader.elements["email"].value.trim(),
+    email: formHeader.elements["email-login"].value.trim(),
     password: formHeader.elements["password"].value.trim(),
   };
   try {
-    const response = await axios.post("https://example.com/api", data, {
-      headers: {
-        "Content-Type": "application/json",
-      },
+    const response = await axios.post(
+      "https://jsonplaceholder.typicode.com/posts",
+      data,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    iziToast.success({
+      title: `Hello, ${data.name}`,
+      position: "topCenter",
     });
   } catch (error) {
     console.log(error);
+    iziToast.error({
+      title: "Error",
+      message: "Illegal operation",
+    });
   } finally {
     formHeader.reset();
     formContainerHeader.classList.remove("is-open");
@@ -73,7 +87,7 @@ buttonFeatured.addEventListener("click", () => {
   buttonFeatured.textContent = isOpen ? "Hide" : "View All";
 });
 
-//!3 Scroll Swiper (Search by Food)
+//! Scroll Swiper (Search by Food)
 import Swiper from "swiper";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -99,7 +113,8 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
 });
 
-//! Input localStorage (Are you starving)
+//! Input localStorage (Are you starving. Hero)
+
 const formHero = document.querySelector(".hero-form");
 const inputHero = document.querySelector(".hero-form-input");
 const locationName = document.querySelector(".header-location-text");
@@ -126,10 +141,17 @@ function formSubmit(e) {
   e.preventDefault();
   const value = inputHero.value.trim();
   if (!value) {
-    alert("no");
+    iziToast.error({
+      title: "Error!",
+      message: "Enter your address",
+      position: "bottomLeft",
+    });
     return;
   }
-  locationName.textContent = value;
+  document.querySelectorAll(".header-location-text").forEach((item) => {
+    item.textContent = value;
+  });
+  // locationName.textContent = value;
   localStorage.removeItem(storageKey);
   inputHero.value = "";
 }
@@ -145,12 +167,16 @@ async function formSubmitFooter(e) {
 
   const value = inputFooter.value.trim();
   if (!value) {
-    alert("Please enter your email.");
+    iziToast.error({
+      title: "Error!",
+      message: "Enter your email",
+      position: "bottomLeft",
+    });
     return;
   }
 
   try {
-    const response = await fetch("https://example.com/api", {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -164,11 +190,14 @@ async function formSubmitFooter(e) {
 
     const data = await response.json();
     console.log("Response:", data);
-    alert("Successfully submitted!");
+    iziToast.success({
+      title: "Hmm...",
+      message:
+        "The server request went through without any issues, but I'm still on the job hunt.",
+    });
     inputFooter.value = "";
   } catch (error) {
     console.log("Ошибка:", error.message);
-    alert("Something went wrong.");
   } finally {
     formFooter.reset();
     console.log("Form reset");
@@ -204,7 +233,7 @@ listSearch.addEventListener("click", (e) => {
   }
 });
 
-// !6 Open modal registration (Header)
+// !Open modal registration (Header)
 const openBtnHeader = document.querySelector(".header-btn");
 const modalHeader = document.querySelector(".header-modal");
 const closeBtnHeader = document.querySelector(".header-modal-close-btn");
@@ -224,10 +253,9 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// !кнопка топ
+// !scroll-to-top
 const scrollBtn = document.querySelector(".scroll-to-top");
 
-// Показать кнопку при прокрутке вниз
 window.addEventListener("scroll", () => {
   if (window.scrollY > 800) {
     scrollBtn.classList.add("show");
@@ -236,7 +264,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Прокрутка вверх при клике
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
@@ -251,6 +278,33 @@ buttonOrder.forEach((button) => {
   button.addEventListener("click", () => {
     const item = button.closest(".popular-items-item");
     const title = item.querySelector(".popular-item-title").textContent;
-    console.log("Заказано:", title);
+    iziToast.info({
+      title: "👌",
+      message:
+        "I could add the order to the cart, but I need a job offer to make it happen.",
+    });
   });
 });
+
+// ! Scroll from header to popular-top (Header)
+const searchInput = document.querySelector(".search-input");
+const targetSection = document.querySelector("#popular-top");
+
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    targetSection.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+});
+
+//! preventDefault footer link (footer)
+const footerLink = document.querySelectorAll(".footer-item-link");
+
+footerLink.forEach((item) =>
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("Click success.");
+  })
+);
