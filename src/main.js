@@ -1,5 +1,13 @@
 import axios from "axios";
 import iziToast from "izitoast";
+import Swiper from "swiper";
+import * as basicLightbox from "basiclightbox";
+
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "basiclightbox/dist/basicLightbox.min.css";
 
 //! Form submit (Header)
 const formHeader = document.querySelector(".header-modal-form");
@@ -88,11 +96,6 @@ buttonFeatured.addEventListener("click", () => {
 });
 
 //! Scroll Swiper (Search by Food)
-import Swiper from "swiper";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-
 const swiper = new Swiper(".swiper", {
   modules: [Autoplay, Navigation],
   //   loop: true,
@@ -114,7 +117,6 @@ const swiper = new Swiper(".swiper", {
 });
 
 //! Input localStorage (Are you starving. Hero)
-
 const formHero = document.querySelector(".hero-form");
 const inputHero = document.querySelector(".hero-form-input");
 const locationName = document.querySelector(".header-location-text");
@@ -205,9 +207,6 @@ async function formSubmitFooter(e) {
 }
 
 // ! Modal with basicLightbox (Search by Food)
-import * as basicLightbox from "basiclightbox";
-import "basiclightbox/dist/basicLightbox.min.css";
-
 const listSearch = document.querySelector(".search-list");
 
 listSearch.addEventListener("click", (e) => {
