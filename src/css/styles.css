@@ -186,12 +186,16 @@ body {
   padding: 14px 24px;
   width: 118px;
   height: 46px;
+  /* box-shadow: 0 20px 40px 0 rgba(255, 174, 0, 0.29), */
+  /* 0 5px 10px 0 rgba(255, 174, 0, 0.26); */
+  background: #fff;
+}
+.header-btn:hover {
+  color: #eeab04;
 
   box-shadow: 0 20px 40px 0 rgba(255, 174, 0, 0.29),
     0 5px 10px 0 rgba(255, 174, 0, 0.26);
-  background: #fff;
 }
-
 .login-icon {
   flex-shrink: 0;
 }
