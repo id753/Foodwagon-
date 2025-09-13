@@ -863,10 +863,10 @@ body {
   background: #fefaf1;
   position: relative;
   width: 100vw;
-  padding-left: 220px;
-  padding-right: 220px;
+  padding-left: 22px;
+  padding-right: 22px;
   padding-top: 82px;
-  padding-bottom: 55px;
+  padding-bottom: 20px;
 
   margin-left: auto;
   margin-right: auto;
@@ -1870,20 +1870,14 @@ a.proceed-info-btn {
 
 /* Стили для мобильных устройств */
 @media (max-width: 767px) {
+  body {
+    max-width: 767px;
+  }
   .container {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .hero-section {
-    height: 620px;
-    background-color: #ffb30e;
 
-    min-width: 100%;
-    height: 500px;
-    background-size: 300px, 400px;
-
-    background-position: right 10% bottom -15%, right 5% bottom -15%;
-  }
   .header-location,
   .header-input-wrapper {
     display: none;
@@ -1896,7 +1890,7 @@ a.proceed-info-btn {
   .mobile-header-location {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
     text-align: center;
     color: #424242;
@@ -1906,8 +1900,8 @@ a.proceed-info-btn {
   }
   .header-modal-content {
     position: fixed;
-    top: 10%;
-    transform: translateX(-50%);
+    /* top: 10%;
+    transform: translateX(-50%); */
     z-index: 1000;
     max-width: 95vw;
     padding: 10px;
@@ -1934,22 +1928,41 @@ a.proceed-info-btn {
     background-position: right 10% bottom -55%, right 7% bottom -55%;
   }
   .hero-section-container {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .hero-title {
     padding-top: 30px;
-    font-size: 60px;
+    font-size: 40px;
   }
   .hero-form-container {
     max-width: 420px;
-    height: 194px;
-    padding-top: 32px;
-    padding-left: 24px;
+    height: auto;
+    padding: 20px;
     margin-top: 32px;
   }
   .hero-form-input {
     max-width: 200px;
+  }
+  .hero-container-btn {
+    font-size: 16px;
+    width: auto;
+  }
+  .hero-section {
+    height: 620px;
+    background-color: #ffb30e;
+
+    min-width: 100%;
+    height: 500px;
+    background-size: 300px, 400px;
+
+    background-position: right 10% bottom -15%, right 5% bottom -15%;
+  }
+  .hero-title {
+    width: auto;
+  }
+  .hero-location-icon {
+    display: none;
   }
   .how-it-work {
     padding: 20px;
@@ -1971,7 +1984,7 @@ a.proceed-info-btn {
   .popular-items-title,
   .featured-title,
   .search-title {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 35px;
   }
   .popular-item-btn {
@@ -1994,8 +2007,8 @@ a.proceed-info-btn {
     padding-top: 20px;
   }
   .search-item-modal-container {
-    font-size: 30px;
-    max-width: 70%;
+    font-size: 20px;
+    /* max-width: 70%; */
     height: auto;
   }
   /* .basicLightbox__placeholder {
@@ -2062,8 +2075,8 @@ a.proceed-info-btn {
     padding: 20px;
   }
   .search-container {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .order-container {
     padding: 10px;
